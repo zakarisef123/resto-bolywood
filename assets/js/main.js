@@ -143,7 +143,7 @@
       var lines = Object.keys(readable).filter(function (k) { return readable[k]; }).map(function (k) { return k + " : " + readable[k]; });
       window.location.href = "mailto:" + C.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n") + "\n\n— " + t("Envoyé depuis le site", "Sent from the website"));
     }
-    var btn = $("[type=submit]", form); if (btn) btn.disabled = true;
+    var btn = $("[type=submit]", form) || $("[type=submit][form=\"" + form.id + "\"]"); if (btn) btn.disabled = true;
     var finish = function (ok) { if (btn) btn.disabled = false; if (!ok) mail(); done(ok); };
     if (C.forms === "netlify") {
       var body = new URLSearchParams(new FormData(form));

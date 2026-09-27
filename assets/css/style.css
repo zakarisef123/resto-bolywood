@@ -602,3 +602,21 @@ canvas.embers{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer
   .cart .cart-saving{margin-bottom:10px;font-size:.8rem}
   .cart .stepper{justify-self:start}
 }
+
+/* panier ordinateur : toujours contenu dans l'écran, bouton « Valider » visible */
+@media (min-width:1041px){
+  .cart{display:flex;flex-direction:column;max-height:calc(100vh - var(--header-h) - 150px);min-height:300px}
+  .cart .cart-body{flex:1 1 auto;min-height:60px;max-height:none;overflow-y:auto}
+  .cart .cart-head,.cart .cart-foot{flex:none}
+  .cart .cart-head{padding:14px 22px}
+  .cart .cart-foot{padding:14px 22px 16px;box-shadow:0 -10px 24px -16px rgba(40,14,8,.3)}
+  .cart .cart-total b{font-size:1.7rem}
+  .cart .cart-saving{margin-bottom:10px;font-size:.82rem}
+}
+
+/* fenêtre de validation : bouton « Envoyer » toujours visible en bas */
+dialog.order-dialog[open]{display:flex;flex-direction:column;overflow:hidden}
+.order-dialog .dlg-head,.order-dialog .dlg-foot{flex:none}
+.order-dialog .dlg-body{flex:1 1 auto;min-height:0;overflow-y:auto}
+.order-dialog .recap{max-height:26vh;overflow-y:auto}
+.dlg-foot{padding:14px 24px calc(16px + env(safe-area-inset-bottom));background:var(--cream);border-top:1px solid var(--line);box-shadow:0 -10px 24px -16px rgba(40,14,8,.3)}

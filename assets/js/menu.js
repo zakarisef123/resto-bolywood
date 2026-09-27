@@ -233,7 +233,7 @@
     var tt = totals();
     $("#o-recap").innerHTML = orderLines(true).map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + '<li class="tot"><b>Total : ' + eur2(tt.sub) + "</b></li>";
     pickupOptions();
-    $("#order-form-wrap").hidden = false; $("#order-success").classList.remove("show");
+    $("#order-form-wrap").hidden = false; $("#order-foot").hidden = false; $("#order-success").classList.remove("show");
     document.body.classList.remove("cart-open");
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
   });
@@ -248,7 +248,7 @@
       "Nom": fd.get("name"), "Téléphone": fd.get("phone"), "Retrait": fd.get("time"),
       "Commande": "\n  " + lines.join("\n  "), "Total": eur2(tt.sub), "Remarque": fd.get("note")
     }, function (sent) {
-      $("#order-form-wrap").hidden = true;
+      $("#order-form-wrap").hidden = true; $("#order-foot").hidden = true;
       var ok = $("#order-success"); ok.classList.add("show");
       $(".ok-mode", ok).textContent = sent ? t("Votre commande nous a été transmise. Nous vous rappelons si besoin.", "Your order has been sent. We'll call you if needed.") : t("Votre messagerie s'est ouverte avec la commande pré-remplie : envoyez-la pour la valider. Pour une commande urgente, appelez-nous.", "Your e-mail app has opened with the order pre-filled — send it to confirm. For urgent orders, please call us.");
       cart = {}; save(); render();
