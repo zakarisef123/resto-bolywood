@@ -134,7 +134,7 @@ p{margin:0 0 1em;text-wrap:pretty}
 .hero-bg{position:absolute;inset:0;z-index:-2}
 .hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:heroZoom 18s var(--ease) forwards}
 @keyframes heroZoom{to{transform:scale(1)}}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,6,.55) 0%,rgba(20,8,6,.2) 35%,rgba(20,8,6,.78) 78%,rgba(20,8,6,.95) 100%),radial-gradient(ellipse at 20% 80%,rgba(122,20,38,.45),transparent 60%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,8,6,.62) 0%,rgba(20,8,6,.3) 45%,rgba(20,8,6,0) 75%),linear-gradient(180deg,rgba(20,8,6,.35) 0%,rgba(20,8,6,0) 22%,rgba(20,8,6,0) 50%,rgba(20,8,6,.7) 100%)}
 .hero-inner{max-width:760px}
 .hero h1{margin-bottom:.25em;text-shadow:0 2px 30px rgba(0,0,0,.35)}
 .hero h1 em{font-style:italic;color:var(--gold-soft);font-weight:500}
@@ -152,8 +152,8 @@ p{margin:0 0 1em;text-wrap:pretty}
 /* page hero */
 .page-hero{position:relative;color:#fff;padding:calc(var(--header-h) + clamp(56px,9vw,110px)) 0 clamp(48px,7vw,84px);overflow:hidden;isolation:isolate;background:var(--ink)}
 .page-hero .bg{position:absolute;inset:0;z-index:-2}
-.page-hero .bg img{width:100%;height:100%;object-fit:cover;opacity:.55}
-.page-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,6,.6),rgba(20,8,6,.85)),radial-gradient(ellipse at 15% 100%,rgba(122,20,38,.55),transparent 60%)}
+.page-hero .bg img{width:100%;height:100%;object-fit:cover}
+.page-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,8,6,.72) 0%,rgba(20,8,6,.38) 50%,rgba(20,8,6,.08) 100%),linear-gradient(0deg,rgba(20,8,6,.45),transparent 55%)}
 .page-hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:.2em}
 .page-hero p{color:rgba(255,255,255,.82);max-width:58ch;font-size:1.1rem;margin:0}
 .crumbs{font-size:.82rem;color:rgba(255,255,255,.65);margin-bottom:14px}
@@ -585,3 +585,10 @@ canvas.embers{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer
 }
 .info-grid>*,.booking>*,.footer-grid>*{min-width:0}
 @media (max-width:420px){.hours li span:last-child{white-space:normal;font-size:.86rem}.card{padding:22px 18px}}
+
+/* photos d en-tête plus lumineuses : lisibilité assurée par une ombre douce sur le texte */
+.hero h1,.hero .lead,.hero-facts,.page-hero h1,.page-hero p,.page-hero .crumbs,.page-hero .eyebrow,.hero .eyebrow{text-shadow:0 2px 18px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.4)}
+@media (max-width:760px){
+  .hero::after{background:linear-gradient(180deg,rgba(20,8,6,.35) 0%,rgba(20,8,6,.15) 30%,rgba(20,8,6,.55) 60%,rgba(20,8,6,.82) 100%)}
+  .page-hero::after{background:linear-gradient(180deg,rgba(20,8,6,.3),rgba(20,8,6,.7))}
+}
