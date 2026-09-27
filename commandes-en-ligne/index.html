@@ -6,6 +6,9 @@
 <title>Commander à emporter — Bollywood Gaillard (−10 %)</title>
 <meta name="description" content="Commandez vos plats indiens à emporter au Bollywood de Gaillard : −10 % sur tous les plats, riz Kashmiri offert dès 20 €, prêt en 25 minutes environ.">
 <link rel="canonical" href="https://www.bollywoodgaillard.com/commandes-en-ligne/">
+<link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/commandes-en-ligne/">
+<link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/order/">
+<link rel="alternate" hreflang="x-default" href="https://www.bollywoodgaillard.com/commandes-en-ligne/">
 <meta name="theme-color" content="#1b0f0c">
 <meta property="og:type" content="restaurant">
 <meta property="og:locale" content="fr_FR">
@@ -19,7 +22,7 @@
 <link rel="apple-touch-icon" href="../img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
@@ -34,6 +37,7 @@
     <nav class="nav" id="nav" aria-label="Navigation principale"><a href="../">Accueil</a><a href="../menu/">La carte</a><a href="../commandes-en-ligne/" aria-current="page">Commander</a><a href="../photos/">Photos</a><a href="../a-propos-de-nous/">Notre histoire</a><a href="../loyalty/">Fidélité</a><a href="../avis/">Avis</a><a href="../contacter-nous/">Contact</a></nav>
     <div class="header-cta">
       <a class="header-phone" href="tel:+33450835864"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>04 50 83 58 64</a>
+      <div class="lang" aria-label="Langue"><a href="../commandes-en-ligne/" hreflang="fr" lang="fr" aria-current="true">FR</a><a href="../en/order/" hreflang="en" lang="en">EN</a></div>
       <a class="btn btn-gold btn-sm" href="../reservations/">Réserver</a>
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
     </div>
@@ -43,7 +47,7 @@
 
 
 <section class="page-hero">
-  <div class="bg"><img src="../img/photos/grill.webp" alt="" fetchpriority="high"></div>
+  <div class="bg" data-parallax="0.18"><img src="../img/photos/grill.webp" alt="" fetchpriority="high"></div>
   <div class="container">
     <div class="crumbs"><a href="../">Accueil</a> / Commander</div>
     <span class="eyebrow" style="color:var(--gold)">À emporter</span>
@@ -72,7 +76,7 @@
       <button type="button" class="cart-close" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
     <div class="cart-body" id="cart-body"></div>
     <div class="cart-foot">
-      <div class="cart-total"><span>Total</span><b id="cart-total">0,00 €</b></div>
+      <div class="cart-total"><span>Total</span><b id="cart-total">0</b></div>
       <div class="cart-saving" id="cart-saving"></div>
       <button type="button" class="btn btn-block" id="cart-checkout" disabled>Valider ma commande <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       <div style="display:flex;justify-content:space-between;margin-top:12px;font-size:.85rem">
@@ -82,7 +86,7 @@
     </div>
   </aside>
 </div>
-<button type="button" class="cart-fab hidden" id="cart-fab" aria-label="Voir ma commande"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Ma commande <span class="qty-badge" data-cart-count style="background:var(--saffron);color:var(--ink)">0</span><span class="fab-total">0 €</span></button>
+<button type="button" class="cart-fab hidden" id="cart-fab" aria-label="Voir ma commande"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Ma commande <span class="qty-badge" data-cart-count style="background:var(--saffron);color:var(--ink)">0</span><span class="fab-total">0</span></button>
 
 <dialog class="order-dialog" id="order-dialog" aria-labelledby="od-title">
   <div class="dlg-head"><h2 id="od-title">Finaliser la commande</h2><button type="button" class="cart-close" style="display:inline-grid" data-close-dialog aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
@@ -90,7 +94,8 @@
     <div id="order-form-wrap">
       <ul class="recap" id="o-recap"></ul>
       <p class="pickup-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Retrait au <b>125 Rue de Genève, 74240 Gaillard</b>. Paiement au retrait.</span></p>
-      <form class="form" id="order-form" novalidate>
+      <form class="form" id="order-form" name="commande-emporter" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="commande-emporter"><input type="hidden" name="subject"><p hidden><label>Ne pas remplir <input name="bot-field"></label></p><input type="hidden" name="commande"><input type="hidden" name="total">
         <div class="form-row">
           <div class="field"><label for="o-name">Nom</label><input id="o-name" name="name" required autocomplete="name"></div>
           <div class="field"><label for="o-phone">Téléphone</label><input id="o-phone" name="phone" type="tel" required autocomplete="tel" placeholder="06 12 34 56 78"></div>
@@ -150,6 +155,7 @@
 </nav>
 <script src="../assets/js/data.js"></script>
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/anim.js" defer></script>
 <script src="../assets/js/menu.js"></script>
 </body>
 </html>

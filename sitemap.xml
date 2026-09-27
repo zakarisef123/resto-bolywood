@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.bollywoodgaillard.com/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/menu/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/commandes-en-ligne/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/reservations/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/photos/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/a-propos-de-nous/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/loyalty/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/avis/</loc></url>
-  <url><loc>https://www.bollywoodgaillard.com/contacter-nous/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.bollywoodgaillard.com/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/menu/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/menu/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/menu/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/menu/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/menu/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/menu/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/commandes-en-ligne/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/commandes-en-ligne/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/order/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/order/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/commandes-en-ligne/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/order/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/reservations/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/reservations/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/book/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/book/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/reservations/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/book/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/photos/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/photos/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/photos/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/photos/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/photos/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/photos/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/a-propos-de-nous/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/a-propos-de-nous/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/about/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/about/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/a-propos-de-nous/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/about/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/loyalty/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/loyalty/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/loyalty/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/loyalty/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/loyalty/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/loyalty/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/avis/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/avis/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/reviews/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/reviews/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/avis/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/reviews/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/contacter-nous/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/contacter-nous/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/contact/"/></url>
+  <url><loc>https://www.bollywoodgaillard.com/en/contact/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/contacter-nous/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/contact/"/></url>
 </urlset>

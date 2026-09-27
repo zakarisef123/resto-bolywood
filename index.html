@@ -6,6 +6,9 @@
 <title>Restaurant Indien Bollywood à Gaillard — Cuisine indienne & pakistanaise</title>
 <meta name="description" content="Restaurant indien et pakistanais à Gaillard (74240), près de Genève. Tandoori, curry, biryani, naans maison. Sur place, à emporter (-10 %) et réservation en ligne.">
 <link rel="canonical" href="https://www.bollywoodgaillard.com/">
+<link rel="alternate" hreflang="fr" href="https://www.bollywoodgaillard.com/">
+<link rel="alternate" hreflang="en" href="https://www.bollywoodgaillard.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.bollywoodgaillard.com/">
 <meta name="theme-color" content="#1b0f0c">
 <meta property="og:type" content="restaurant">
 <meta property="og:locale" content="fr_FR">
@@ -19,7 +22,7 @@
 <link rel="apple-touch-icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Restaurant Indien Bollywood","url":"https://www.bollywoodgaillard.com/","image":"https://www.bollywoodgaillard.com/img/photos/hero.webp","logo":"https://www.bollywoodgaillard.com/img/logo.png","telephone":"+33450835864","email":"bollywood.gaillard@gmail.com","priceRange":"€€","servesCuisine":["Indienne","Pakistanaise","Tandoori","Végétarienne"],"address":{"@type":"PostalAddress","streetAddress":"125 Rue de Genève","addressLocality":"Gaillard","postalCode":"74240","addressRegion":"Auvergne-Rhône-Alpes","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":46.1915763,"longitude":6.2111514},"hasMenu":"https://www.bollywoodgaillard.com/menu/","acceptsReservations":"True","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:30","closes":"14:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"18:30","closes":"22:30"}],"sameAs":["https://www.facebook.com/bollywoodgaillard","https://www.instagram.com/bollywoodgaillard/","https://www.tripadvisor.fr/Restaurant_Review-g196702-d12134929-Reviews-Restaurant_Indien_Bollywood-Gaillard_Annemasse_Haute_Savoie_Auvergne_Rhone_Alpes.html","https://www.thefork.fr/restaurant/bollywood-r290855"]}</script>
 </head>
@@ -31,9 +34,10 @@
       <img src="img/logo.webp" alt="" width="46" height="46">
       <span class="brand-name">Bollywood<small>Gaillard · Cuisine indienne</small></span>
     </a>
-    <nav class="nav" id="nav" aria-label="Navigation principale"><a href="" aria-current="page">Accueil</a><a href="menu/">La carte</a><a href="commandes-en-ligne/">Commander</a><a href="photos/">Photos</a><a href="a-propos-de-nous/">Notre histoire</a><a href="loyalty/">Fidélité</a><a href="avis/">Avis</a><a href="contacter-nous/">Contact</a></nav>
+    <nav class="nav" id="nav" aria-label="Navigation principale"><a href="./" aria-current="page">Accueil</a><a href="menu/">La carte</a><a href="commandes-en-ligne/">Commander</a><a href="photos/">Photos</a><a href="a-propos-de-nous/">Notre histoire</a><a href="loyalty/">Fidélité</a><a href="avis/">Avis</a><a href="contacter-nous/">Contact</a></nav>
     <div class="header-cta">
       <a class="header-phone" href="tel:+33450835864"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>04 50 83 58 64</a>
+      <div class="lang" aria-label="Langue"><a href="./" hreflang="fr" lang="fr" aria-current="true">FR</a><a href="en/" hreflang="en" lang="en">EN</a></div>
       <a class="btn btn-gold btn-sm" href="reservations/">Réserver</a>
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
     </div>
@@ -42,18 +46,19 @@
 <main id="contenu">
 
 <section class="hero">
-  <div class="hero-bg"><img src="img/photos/hero.webp" alt="Assortiment de plats tandoori, riz biryani et sauces du restaurant Bollywood" fetchpriority="high"></div>
+  <div class="hero-bg" data-parallax="0.12"><img src="img/photos/hero.webp" alt="Assortiment de plats tandoori, riz biryani et sauces du restaurant Bollywood" fetchpriority="high"></div>
+  <canvas class="embers" aria-hidden="true"></canvas>
   <div class="container">
     <div class="hero-inner">
-      <div class="status-pill" data-status><span class="status-dot"></span><span class="status-text">Ouvert du mardi au dimanche</span></div>
-      <span class="eyebrow" style="color:var(--gold)">Gaillard · Haute-Savoie</span>
-      <h1>Les saveurs de l'Inde, <em>à deux pas de Genève</em></h1>
-      <p class="lead">Currys mijotés, grillades au four tandoor, naans tout juste sortis du four : une cuisine indienne et pakistanaise généreuse, préparée chaque jour avec des épices choisies.</p>
-      <div class="btn-row">
-        <a class="btn btn-gold" href="reservations/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Réserver une table</a>
-        <a class="btn btn-ghost" href="commandes-en-ligne/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Commander à emporter</a>
+      <div class="fade-up" style="--d:.1s"><div class="status-pill" data-status><span class="status-dot"></span><span class="status-text">Ouvert du mardi au dimanche</span></div></div>
+      <span class="eyebrow fade-up" style="color:var(--gold);--d:.2s">Gaillard · Haute-Savoie</span>
+      <h1><span class="w"><span style="--i:0">Les</span></span> <span class="w"><span style="--i:1">saveurs</span></span> <span class="w"><span style="--i:2">de</span></span> <span class="w"><span style="--i:3">l'Inde,</span></span> <em><span class="w"><span style="--i:4">à</span></span> <span class="w"><span style="--i:5">deux</span></span> <span class="w"><span style="--i:6">pas</span></span> <span class="w"><span style="--i:7">de</span></span> <span class="w"><span style="--i:8">Genève</span></span></em></h1>
+      <p class="lead fade-up" style="--d:1s">Currys mijotés, grillades au four tandoor, naans tout juste sortis du four : une cuisine indienne et pakistanaise généreuse, préparée chaque jour avec des épices choisies.</p>
+      <div class="btn-row fade-up" style="--d:1.15s">
+        <a class="btn btn-gold btn-magnetic" href="reservations/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Réserver une table</a>
+        <a class="btn btn-ghost btn-magnetic" href="commandes-en-ligne/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Commander à emporter</a>
       </div>
-      <div class="hero-facts">
+      <div class="hero-facts fade-up" style="--d:1.3s">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>125 Rue de Genève, Gaillard</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mar–Dim · 11h30–14h30 · 18h30–22h30</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+33450835864" style="text-decoration:none">04 50 83 58 64</a></span>
@@ -61,7 +66,7 @@
     </div>
   </div>
 </section>
-
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Tandoori<i>✦</i>Biryani<i>✦</i>Naan au fromage<i>✦</i>Butter Chicken<i>✦</i>Lassi mangue<i>✦</i>Korma<i>✦</i>Samoussa<i>✦</i>Tikka Masala<i>✦</i></span><span>Tandoori<i>✦</i>Biryani<i>✦</i>Naan au fromage<i>✦</i>Butter Chicken<i>✦</i>Lassi mangue<i>✦</i>Korma<i>✦</i>Samoussa<i>✦</i>Tikka Masala<i>✦</i></span></div></div>
 <section class="section-tight">
   <div class="container">
     <div class="perks reveal">
@@ -79,35 +84,35 @@
       <a class="link-arrow" href="menu/">Voir toute la carte <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="dishes">
-      <a class="dish reveal reveal-d0" href="menu/#poulet">
-        <img src="img/menu/a27a802f9f.webp" alt="Butter Chicken" loading="lazy">
+      <div class="reveal reveal-d0"><a class="dish" data-tilt href="menu/#poulet">
+        <img src="img/menu/a27a802f9f.webp" alt="Butter Chicken" loading="lazy"><span class="glare"></span>
         <span class="dish-tag">Le préféré</span><span class="dish-price">14,50 €</span>
-        <div class="dish-body"><h3>Butter Chicken</h3><p>Poulet grillé mijoté au beurre et fromage, yaourt, crème, tomates et fruits secs</p></div></a><a class="dish reveal reveal-d1" href="menu/#entrees-tandoori">
-        <img src="img/menu/aebf366d1d.webp" alt="Bollywood Mix Tandoori" loading="lazy">
+        <div class="dish-body"><h3>Butter Chicken</h3><p>Poulet grillé mijoté au beurre et fromage, yaourt, crème, tomates et fruits secs</p></div></a></div><div class="reveal reveal-d1"><a class="dish" data-tilt href="menu/#entrees-tandoori">
+        <img src="img/menu/aebf366d1d.webp" alt="Bollywood Mix Tandoori" loading="lazy"><span class="glare"></span>
         <span class="dish-tag">À partager</span><span class="dish-price">21 €</span>
-        <div class="dish-body"><h3>Bollywood Mix Tandoori</h3><p>Assortiment tandoori : agneau, poulet, gambas géantes, seekh kebab et poisson</p></div></a><a class="dish reveal reveal-d2" href="menu/#poulet">
-        <img src="img/menu/9f87877d86.webp" alt="Poulet Tikka Masala" loading="lazy">
+        <div class="dish-body"><h3>Bollywood Mix Tandoori</h3><p>Assortiment tandoori : agneau, poulet, gambas géantes, seekh kebab et poisson</p></div></a></div><div class="reveal reveal-d2"><a class="dish" data-tilt href="menu/#poulet">
+        <img src="img/menu/9f87877d86.webp" alt="Poulet Tikka Masala" loading="lazy"><span class="glare"></span>
         <span class="dish-price">14,50 €</span>
-        <div class="dish-body"><h3>Poulet Tikka Masala</h3><p>Grillé au tandoor puis mijoté à la crème et aux épices</p></div></a><a class="dish reveal reveal-d0" href="menu/#agneau">
-        <img src="img/menu/c3b646d9d3.webp" alt="Nali Gosht" loading="lazy">
+        <div class="dish-body"><h3>Poulet Tikka Masala</h3><p>Grillé au tandoor puis mijoté à la crème et aux épices</p></div></a></div><div class="reveal reveal-d0"><a class="dish" data-tilt href="menu/#agneau">
+        <img src="img/menu/c3b646d9d3.webp" alt="Nali Gosht" loading="lazy"><span class="glare"></span>
         <span class="dish-tag">Spécialité</span><span class="dish-price">19,50 €</span>
-        <div class="dish-body"><h3>Nali Gosht</h3><p>Souris d'agneau fondante mijotée dans une sauce riche et parfumée aux épices indiennes.</p></div></a><a class="dish reveal reveal-d1" href="menu/#naans-maison">
-        <img src="img/menu/1163ecea0e.webp" alt="Naan fromage" loading="lazy">
+        <div class="dish-body"><h3>Nali Gosht</h3><p>Souris d'agneau fondante mijotée dans une sauce riche aux épices indiennes</p></div></a></div><div class="reveal reveal-d1"><a class="dish" data-tilt href="menu/#naans-maison">
+        <img src="img/menu/1163ecea0e.webp" alt="Naan fromage" loading="lazy"><span class="glare"></span>
         <span class="dish-price">4 €</span>
-        <div class="dish-body"><h3>Naan fromage</h3><p>Pain fourré au fromage</p></div></a><a class="dish reveal reveal-d2" href="menu/#lassi-maison">
-        <img src="img/menu/ef02aab192.webp" alt="Lassi à la mangue" loading="lazy">
+        <div class="dish-body"><h3>Naan fromage</h3><p>Pain fourré au fromage</p></div></a></div><div class="reveal reveal-d2"><a class="dish" data-tilt href="menu/#lassi-maison">
+        <img src="img/menu/ef02aab192.webp" alt="Lassi à la mangue" loading="lazy"><span class="glare"></span>
         <span class="dish-tag">Fait maison</span><span class="dish-price">6,50 €</span>
-        <div class="dish-body"><h3>Lassi à la mangue</h3><p></p></div></a>
+        <div class="dish-body"><h3>Lassi à la mangue</h3><p></p></div></a></div>
     </div>
   </div>
 </section>
 
 <section class="on-dark">
   <div class="container split">
-    <div class="split-media reveal">
-      <img class="main" src="img/photos/tandoori.webp" alt="Grillades tandoori servies sur plaque chaude" loading="lazy">
-      <img class="inset" src="img/photos/salle2.webp" alt="La salle du restaurant Bollywood" loading="lazy">
-      <div class="stamp"><span><b>Four</b>tandoor</span></div>
+    <div class="split-media">
+      <img class="main reveal-mask" src="img/photos/tandoori.webp" alt="Grillades tandoori servies sur plaque chaude" loading="lazy">
+      <img class="inset reveal reveal-d2" src="img/photos/salle2.webp" alt="La salle du restaurant Bollywood" loading="lazy">
+      <div class="stamp reveal reveal-d3"><span><b>Four</b>tandoor</span></div>
     </div>
     <div class="reveal reveal-d1">
       <span class="eyebrow">La maison</span>
@@ -118,7 +123,7 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg><span>Plus de 30 plats végétariens : dal, paneer, légumes, biryani</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg><span>Repas d'affaires, en famille, entre amis ou en amoureux</span></li>
       </ul>
-      <a class="btn btn-gold" href="a-propos-de-nous/">Découvrir notre histoire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-gold btn-magnetic" href="a-propos-de-nous/">Découvrir notre histoire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
@@ -156,10 +161,9 @@
       <h2>1 € dépensé = 1 point</h2>
       <p style="margin:0">50 points offerts à l'inscription, puis des réductions à chaque commande.</p>
     </div>
-    <a class="btn btn-gold" href="loyalty/">Découvrir le programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn-gold btn-magnetic" href="loyalty/">Découvrir le programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
-
 
 <section class="on-paper" id="infos">
   <div class="container">
@@ -180,9 +184,9 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><a href="tel:+33450835864">04 50 83 58 64</a><small>Réservations & commandes</small></span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><a href="mailto:bollywood.gaillard@gmail.com">bollywood.gaillard@gmail.com</a></span></li>
         </ul>
-        <div class="btn-row"><a class="btn  btn-sm" href="https://www.google.com/maps/dir/?api=1&destination=Restaurant+Indien+Bollywood+125+Rue+de+Gen%C3%A8ve+74240+Gaillard" target="_blank" rel="noopener">Itinéraire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        <div class="btn-row"><a class="btn btn-sm" href="https://www.google.com/maps/dir/?api=1&destination=Restaurant+Indien+Bollywood+125+Rue+de+Gen%C3%A8ve+74240+Gaillard" target="_blank" rel="noopener">Itinéraire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
-      <div class="map reveal reveal-d2" data-map="https://www.google.com/maps?q=Restaurant%20Indien%20Bollywood%2C%20125%20Rue%20de%20Gen%C3%A8ve%2C%2074240%20Gaillard&output=embed&z=16">
+      <div class="map reveal" data-map="https://www.google.com/maps?q=Restaurant%20Indien%20Bollywood%2C%20125%20Rue%20de%20Gen%C3%A8ve%2C%2074240%20Gaillard&output=embed&z=16&hl=fr">
     <div style="height:100%;min-height:320px;display:grid;place-items:center;text-align:center;padding:24px;background:linear-gradient(135deg,var(--paper),#efe0c9)">
       <div><div style="width:56px;height:56px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:var(--maroon);color:#fff"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
       <p style="margin:0 0 14px;font-weight:700;color:var(--text)">125 Rue de Genève, 74240 Gaillard</p>
@@ -192,7 +196,6 @@
     </div>
   </div>
 </section>
-
 </main>
 <footer class="site-footer">
   <div class="container">
@@ -235,6 +238,7 @@
 </nav>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/anim.js" defer></script>
 
 </body>
 </html>
